@@ -4,8 +4,6 @@ import { useRouter } from 'next/router';
 
 import Widget from '../src/components/Widget';
 import QuizBackground from '../src/components/QuizBackground';
-import Footer from '../src/components/Footer';
-import GitHubCorner from '../src/components/GitHubCorner';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizContainer from '../src/components/QuizContainer';
 import Input from '../src/components/Input';
@@ -49,8 +47,6 @@ export default function Home() {
           </Widget.Content>
         </Widget>
       </QuizContainer>
-      <Footer />
-      <GitHubCorner projectUrl="https://github.com/thauska" />
     </QuizBackground>
   );
 }
