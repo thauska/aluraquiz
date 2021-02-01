@@ -3,7 +3,6 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import db from '../db.json';
 import Head from '../src/components/Head';
 import GitHubCorner from '../src/components/GitHubCorner';
-import Footer from '../src/components/Footer';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -36,9 +35,8 @@ export default function App({ Component, pageProps }) {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Component {...pageProps} />
-      <GitHubCorner projectUrl="https://github.com/thauska" />
+        <GitHubCorner projectUrl="https://github.com/thauska" />
       </ThemeProvider>
-      <Footer />
     </>
   );
 }
